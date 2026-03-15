@@ -1,0 +1,30 @@
+{
+  "name": "Extension to block youtube shorts",
+  "description": "To get rid of em nasty shorts. ",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "nuke_shorts.html",
+    "default_icon": {
+    "16": "icons/16get_nuked_shorts.png",
+    "32": "icons/32get_nuked_shorts.png",
+    "48": "icons/48get_nuked_shorts.png",
+    "128": "icons/128get_nuked_shorts.png"
+  }
+},
+    "icons": {
+  "16": "icons/16get_nuked_shorts.png",
+  "32": "icons/32get_nuked_shorts.png",
+  "48": "icons/48get_nuked_shorts.png",
+  "128": "icons/128get_nuked_shorts.png"
+},
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css":["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

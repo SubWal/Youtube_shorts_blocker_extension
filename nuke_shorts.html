@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        width: 240px;
+        padding: 16px;
+        font-family: sans-serif;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 15px;
+        margin-bottom: 4px;
+      }
+
+      .section-label {
+        font-size: 11px;
+        color: #888;
+        margin: 12px 0 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 13px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 8px;
+      }
+
+      .enabled {
+        background-color: #e53935;
+        color: white;
+      }
+
+      .disabled {
+        background-color: #43a047;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>YouTube Shorts Blocker</h2>
+
+    <div class="section-label">Shorts</div>
+    <button id="toggleShorts">Loading...</button>
+
+    <div class="section-label">Layout</div>
+    <button id="toggleLayout">Loading...</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
