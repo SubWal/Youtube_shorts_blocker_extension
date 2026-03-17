@@ -31,7 +31,7 @@ function applyOldLayout() {
     const link = document.createElement('link');
     link.id = 'yt-old-layout-style';
     link.rel = 'stylesheet';
-    link.href = chrome.runtime.getURL('styles.css');
+    link.href = chrome.runtime.getURL('content.css');
     document.head.appendChild(link);
   }
 }
